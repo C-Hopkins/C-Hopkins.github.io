@@ -1,0 +1,537 @@
+/*
+Project Name: Put A Bird On It
+Client: FEWD38
+Author: Clayton Hopkins
+Developer @GA in SF
+
+Style Guide
+Lato = Font
+0D96D2 = Blue
+9B95C3 = Purple
+DCA8D0 = Pink
+4A4A4A = Dark Grey
+D8D8D8 = Light Grey
+*/
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+/* <div class="clearfix"></div> */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clear {
+  clear: both;
+}
+.body-container {
+  width: 100%;
+  background-color: #FFF;
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-top: 2em;
+}
+p {
+  font-size: 25px;
+  line-height: 1.4em;
+  letter-spacing: 3px;
+  padding: 2em;
+}
+.italic {
+  font-style: italic;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a {
+  color: #FFF;
+}
+.video-overlay {
+  margin: 0 auto;
+  width: 100%;
+  padding: 1.75em .5em 2em;
+  position: absolute;
+  text-align: center;
+  font-size: 100px;
+  color: #FFF;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+}
+.objective-overlay {
+  margin: 0 auto;
+  width: 100%;
+  padding: 14.5em 5em 1em;
+  position: absolute;
+  text-align: center;
+  font-size: 40px;
+  color: #FFF;
+  line-height: 1.25em;
+  letter-spacing: 4px;
+}
+#video-viewport {
+  overflow: hidden;
+  /*min-height: 800px;*/
+  top: 0;
+}
+/*.moving-swan {
+  min-height: 800px;
+}*/
+.mobile-background {
+  display: none;
+  margin-left: -200px;
+}
+.youtube-container {
+  text-align: center;
+  background-color: #0D96D2;
+  color: #FFF;
+  margin-top: -1em;
+}
+.youtube-wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+  width: 100%;
+}
+.youtube-wrapper iframe {
+	position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+	width: 100%;
+	height: 100%;
+}
+.items {
+  color: #FFF;
+  text-align: center;
+}
+.items img {
+  max-width:100%;
+  height:auto;
+  padding: .3em 1em;
+}
+.item-one-image, .item-two-image, .item-three-image {
+  margin-bottom: 2.5em;
+}
+.item-one {
+  background-color: #9B95C3;
+}
+.item-two {
+  background-color: #DCA8D0;
+}
+.item-three {
+  background-color: #0D96D2;
+}
+.finale {
+  background-image: url("../images/flockofbirds.png");
+  background-size: cover;
+  overflow: hidden;
+  color: #FFF;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 5em;
+}
+.finale-h1 {
+  font-size: 50px;
+}
+.finale-p {
+  padding-bottom: 4em;
+  text-transform: uppercase;
+}
+.reset-button {
+  color: #FFF;
+  background-color: rgba(74, 74, 74, 0.5);
+  font-size: 1.5em;
+  padding: 1em 6.2em;
+  border: 2px solid #0D96D2;
+  transition-duration: 0.4s;
+  letter-spacing: 1.5px;
+}
+.reset-button:hover {
+  background-color: #FFF;
+  color: #0D96D2;
+}
+.footer {
+  color: #FFF;
+  background-color: #4A4A4A;
+  text-align: center;
+  padding: 6em 2em 2em;
+  letter-spacing: 1.5px;
+}
+.footer p {
+  padding: 3.5em 1em 1em;
+}
+.footer-button {
+  color: #0D96D2;
+  font-size: 1.5em;
+  padding: 1em 3em;
+  border: 2px solid #0D96D2;
+  margin-top: 6em;
+  transition-duration: 0.4s;
+}
+.footer-button:hover {
+  background-color: #0D96D2;
+  color: #FFF;
+}
+.footer-blue {
+  color: #0D96D2;
+}
+/*.portfolio-link {
+  color: #0D96D2;
+}*/
+.hide {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+  .video-overlay {
+    font-size: 80px;
+    letter-spacing: 10px;
+  }
+  .objective-overlay {
+    padding: 13em 2.5em 1em;
+    font-size: 40px;
+    line-height: 1.25em;
+    font-weight: normal;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .objective-overlay {
+    padding: 20em 2em .5em;
+    font-size: 30px;
+  }
+  .footer {
+    padding-top: 7em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .mobile-background {
+    display: block;
+  }
+  .moving-swan {
+    display: none;
+  }
+  .objective-overlay {
+    padding: 18em 1em 1em;
+    font-size: 30px;
+    line-height: 1.25em;
+  }
+  h1 {
+    padding: 2em 1em .5em;
+  }
+  p {
+    line-height: 1.5em;
+    padding: .5em 1em 1em;
+    font-weight: normal;
+  }
+  .item-one-image, .item-two-image, .item-three-image {
+    margin-bottom: 1em;
+  }
+  .reset-button {
+    padding: 1em 4.5em;;
+  }
+  .footer p {
+    font-size: 15px;
+    padding-top: 5em;
+  }
+  .footer-button {
+    font-size: 1.5em;
+    padding: 1em 1em;
+    margin-top: 8em;
+  }
+}
+@media only screen and (max-height: 900px) and (max-width: 1300px){
+  .video-overlay {
+    font-size: 80px;
+    letter-spacing: 8px;
+    padding: 1em 1.5em .5em;
+  }
+  .objective-overlay {
+    font-size: 25px;
+    padding: 15em 2em 1em;
+  }
+}
+@media only screen and (max-height: 700px) and (max-width: 1300px){
+  .video-overlay {
+    font-size: 80px;
+    letter-spacing: 8px;
+    padding: 1em 1.5em .5em;
+  }
+  .objective-overlay {
+    font-size: 25px;
+    padding: 19em 2em 1em;
+  }
+}
+@media only screen and (max-height: 550px) and (max-width: 1300px){
+  .video-overlay {
+    font-size: 60px;
+    letter-spacing: 8px;
+    padding: 1em 1.5em .5em;
+  }
+  .objective-overlay {
+    font-size: 20px;
+    padding: 15em 2em 1em;
+  }
+}
+@media only screen and (max-height: 375px) and (max-width: 1300px){
+  .video-overlay {
+    font-size: 40px;
+    letter-spacing: 8px;
+    padding: 1em 1.5em .5em;
+  }
+  .objective-overlay {
+    font-size: 20px;
+    padding: 12em 2.5em 1em;
+  }
+}
+@media only screen and (max-height: 300px) and (max-width: 1300px){
+  .video-overlay {
+    font-size: 40px;
+    letter-spacing: 8px;
+    padding: 1em 1.5em .5em;
+  }
+  .objective-overlay {
+    font-size: 20px;
+    padding: 7em 7em 1em;
+  }
+}
+@media only screen and (max-height: 900px) and (max-width: 1100px){
+  .video-overlay {
+    font-size: 80px;
+    letter-spacing: 8px;
+    padding: 1em 1.5em .5em;
+  }
+  .objective-overlay {
+    font-size: 25px;
+    padding: 15em 2em 1em;
+  }
+}
+@media only screen and (max-height: 750px) and (max-width: 1100px){
+  .video-overlay {
+    font-size: 80px;
+    letter-spacing: 8px;
+    padding: 1em 1em .5em;
+  }
+  .objective-overlay {
+    font-size: 25px;
+    padding: 15em 2em 1em;
+  }
+}
+@media only screen and (max-height: 450px) and (max-width: 1100px){
+  .video-overlay {
+    font-size: 60px;
+    letter-spacing: 8px;
+    padding: 1em 1em .5em;
+  }
+  .objective-overlay {
+    font-size: 25px;
+    padding: 9em 2em 1em;
+  }
+}
+@media only screen and (max-height: 300px) and (max-width: 1100px){
+  .video-overlay {
+    font-size: 40px;
+    letter-spacing: 8px;
+    padding: 1em 1em .5em;
+  }
+  .objective-overlay {
+    font-size: 25px;
+    padding: 5em 2em 1em;
+  }
+}
+@media only screen and (max-height: 750px) and (max-width: 800px){
+  .video-overlay {
+    font-size: 80px;
+    letter-spacing: 8px;
+    padding: 1em .5em .5em;
+  }
+  .objective-overlay {
+    font-size: 25px;
+    padding: 18em 2em 1em;
+  }
+}
+@media only screen and (max-height: 550px) and (max-width: 800px){
+  .video-overlay {
+    font-size: 80px;
+    letter-spacing: 8px;
+    padding: 1em .5em .5em;
+  }
+  .objective-overlay {
+    font-size: 20px;
+    padding: 15em 2em 1em;
+  }
+}
+@media only screen and (max-height: 350px) and (max-width: 800px){
+  .video-overlay {
+    font-size: 40px;
+    letter-spacing: 8px;
+    padding: 1em .5em .5em;
+  }
+  .objective-overlay {
+    font-size: 20px;
+    padding: 6em 2em 1em;
+  }
+}
+@media only screen and (max-height: 900px) and (max-width: 650px){
+  .video-overlay {
+    font-size: 80px;
+    letter-spacing: 8px;
+    padding: 1em .5em .5em;
+  }
+  .objective-overlay {
+    font-size: 25px;
+    padding: 20em 2em 1em;
+  }
+}
+@media only screen and (max-height: 600px) and (max-width: 650px){
+  .video-overlay {
+    font-size: 80px;
+    letter-spacing: 8px;
+    padding: 1em .5em .5em;
+  }
+  .objective-overlay {
+    font-size: 25px;
+    padding: 15em 2em 1em;
+  }
+}
+@media only screen and (max-height: 500px) and (max-width: 650px){
+  .video-overlay {
+    font-size: 60px;
+    letter-spacing: 8px;
+    padding: 1em .5em .5em;
+  }
+  .objective-overlay {
+    font-size: 20px;
+    padding: 15em 2em 1em;
+  }
+}
+@media only screen and (max-height: 375px) and (max-width: 650px){
+  .video-overlay {
+    font-size: 50px;
+    letter-spacing: 8px;
+    padding: 1em 1em .5em;
+  }
+  .objective-overlay {
+    font-size: 20px;
+    padding: 11em 2em 1em;
+  }
+}
+@media only screen and (max-height: 280px) and (max-width: 650px){
+  .video-overlay {
+    font-size: 50px;
+    letter-spacing: 8px;
+    padding: 1em 1em .5em;
+  }
+  .objective-overlay {
+    font-size: 20px;
+    padding: 6em 2em 1em;
+  }
+}
+@media only screen and (max-height: 250px) and (max-width: 650px){
+  .video-overlay {
+    font-size: 35px;
+    letter-spacing: 8px;
+    padding: .5em 1em .5em;
+  }
+  .objective-overlay {
+    font-size: 20px;
+    padding: 5em 2em 1em;
+  }
+}
+
+@media only screen and (max-height: 750px) and (max-width: 500px){
+  .video-overlay {
+    font-size: 80px;
+    letter-spacing: 8px;
+    padding: 1em .5em .5em;
+  }
+  .objective-overlay {
+    font-size: 25px;
+    padding: 18em 2em 1em;
+  }
+}
+
+@media only screen and (max-height: 620px) and (max-width: 500px){
+  .video-overlay {
+    font-size: 50px;
+    letter-spacing: 8px;
+    padding: 2em 2em 1em;
+  }
+  .objective-overlay {
+    font-size: 25px;
+    padding: 13em 2em 1em;
+  }
+}
+@media only screen and (max-height: 500px) and (max-width: 500px){
+  .video-overlay {
+    font-size: 40px;
+    letter-spacing: 5px;
+    padding: 2em 2em 1em;
+  }
+  .objective-overlay {
+    font-size: 25px;
+    padding: 11em 2em 1em;
+  }
+}
+@media only screen and (max-height: 450px) and (max-width: 500px){
+  .video-overlay {
+    font-size: 35px;
+    letter-spacing: 5px;
+    padding: 2em 2em 1em;
+  }
+  .objective-overlay {
+    font-size: 20px;
+    padding: 11em 2em 1em;
+  }
+}
+@media only screen and (max-height: 350px) and (max-width: 500px){
+  .video-overlay {
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding: 2.5em 1em 1em;
+  }
+  .objective-overlay {
+    font-size: 20px;
+    padding: 7.5em 2em 1em;
+  }
+}
+@media only screen and (max-height: 250px) and (max-width: 500px){
+  .video-overlay {
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 2em 1em 1em;
+  }
+  .objective-overlay {
+    font-size: 15px;
+    padding: 9em 2em 1em;
+  }
+}
+@media only screen and (max-height: 200px) and (max-width: 400px){
+  .video-overlay {
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 2em 1em 1em;
+  }
+  .objective-overlay {
+    font-size: 15px;
+    padding: 7.75em 2em 1em;
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="Bird Project" content="Put A Bird On It">
+
+		<title>Put A Bird On It</title>
+
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,400italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	</head>
+
+	<body class="body-container">
+		<div id="video-viewport">
+			<div class="video-overlay">Put A Bird On It</div>
+			<div class="objective-overlay">Put a bird on your items below so that your gift shop in Portland can open for business.</div>
+			<video class="moving-swan" autoplay loop preload width="640" height="360">
+				<source src="swans/MP4/Three-Swans.mp4" type="video/mp4" />
+				<source src="swans/WEBM/Three-Swans.webm" type="video/webm" />
+	    </video>
+			<img src="swans/Snapshots/Three-Swans.jpg" class="mobile-background">
+		</div>
+
+		<section class="youtube-container">
+			<h1>Why?</h1>
+			<p>Please meet your Portlandia retail consultants, Bryce Shivers and Lisa Eversman:</p>
+			<div class="youtube-wrapper">
+				<iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/iHmLljk2t8M?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0">
+				</iframe>
+			</div>
+			<h1>Instructions</h1>
+			<p>Spruce up your items below by clicking each target to put a bird on it.</p>
+		</section>
+
+		<section class="items">
+			<div class="item-one">
+				<h1>Item #1</h1>
+				<p>How about this tea pot? It could really use a bird.</p>
+				<img class="item-one-image image-swap" src="images/teapot.png">
+				<img class="item-one-image hide" src="images/teapot-bird.png">
+			</div>
+			<div class="item-two">
+				<h1>Item #2</h1>
+				<p>What a sad little tote bag. How about we put a bird on it?</p>
+				<img class="item-two-image image-swap" src="images/totebag.png">
+				<img class="item-two-image hide" src="images/totebag-bird.png">
+			</div>
+			<div class="item-three">
+				<h1>Item #3</h1>
+				<p>Did you see this? I didn't. Sew a bird on this pillow, too.</p>
+				<img class="item-three-image image-swap" src="images/pillow.png">
+				<img class="item-three-image hide" src="images/pillow-bird.png">
+			</div>
+		</section>
+
+		<section class="finale hide">
+			<h1 class="finale-h1">Success!</h1>
+			<p class="finale-p">Your gift shop is ready to open for business.</p>
+			<a class="reset-button">Reset</a>
+		</section>
+
+		<section class="footer">
+			<a target="_blank" class="footer-button" href="https://medium.com/@claytonhopkins/put-a-bird-on-it-e266acce1da2#.jumu2hi3y">About this Project</a>
+			<p class="footer-p">Made with <span class="footer-blue">&hearts; </span>by Clayton <span class="footer-blue"></p>
+		</section>
+
+		<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
