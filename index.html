@@ -1,115 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Clayton's Portfolio</title>
-        <meta name="Clayton's portfolio" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Muli:400,400i" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <script src="https://use.fontawesome.com/14cc3e8516.js"></script>
-    </head>
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="Bird Project" content="Put A Bird On It">
 
-    <body class="body-container">
+		<title>Put A Bird On It</title>
 
-<!--
-Oh hi there,
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,400italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	</head>
 
-Thanks for checking out my portfolio. I coded this with vanilla HTML and CSS. A big thanks to my friends and colleagues Becca, Omar, Noah, and Jeffrey ATW for the help along the way. It takes a village.
+	<body class="body-container">
+		<div id="video-viewport">
+			<div class="video-overlay">Put A Bird On It</div>
+			<div class="objective-overlay">Put a bird on your items below so that your gift shop in Portland can open for business.</div>
+			<video class="moving-swan" autoplay loop preload width="640" height="360">
+				<source src="swans/MP4/Three-Swans.mp4" type="video/mp4" />
+				<source src="swans/WEBM/Three-Swans.webm" type="video/webm" />
+	    </video>
+			<img src="swans/Snapshots/Three-Swans.jpg" class="mobile-background">
+		</div>
 
-Best,
-Clayton
--->
+		<section class="youtube-container">
+			<h1>Why?</h1>
+			<p>Please meet your Portlandia retail consultants, Bryce Shivers and Lisa Eversman:</p>
+			<div class="youtube-wrapper">
+				<iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/iHmLljk2t8M?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0">
+				</iframe>
+			</div>
+			<h1>Instructions</h1>
+			<p>Spruce up your items below by clicking each target to put a bird on it.</p>
+		</section>
 
-        <section class="home-introduction">
-            <h1>Clayton Hopkins</h1>
-            <h2>Product Designer</h2>
-            <hr color="#D8D8D8" class="home-hr">
-        </section>
+		<section class="items">
+			<div class="item-one">
+				<h1>Item #1</h1>
+				<p>How about this tea pot? It could really use a bird.</p>
+				<img class="item-one-image image-swap" src="images/teapot.png">
+				<img class="item-one-image hide" src="images/teapot-bird.png">
+			</div>
+			<div class="item-two">
+				<h1>Item #2</h1>
+				<p>What a sad little tote bag. How about we put a bird on it?</p>
+				<img class="item-two-image image-swap" src="images/totebag.png">
+				<img class="item-two-image hide" src="images/totebag-bird.png">
+			</div>
+			<div class="item-three">
+				<h1>Item #3</h1>
+				<p>Did you see this? I didn't. Sew a bird on this pillow, too.</p>
+				<img class="item-three-image image-swap" src="images/pillow.png">
+				<img class="item-three-image hide" src="images/pillow-bird.png">
+			</div>
+		</section>
 
-        <main>
-            <section class="flex-container">
-                <img class="flex-image" src="img/headshot.jpg" alt="Clayton Hopkins headshot"></img>
-                <div class="flex-content">
-                    <h1>Current projects at Lab Zero</h1>
-                    <p>I work on the design team at <a href="https://labzero.com" target='_blank'>Lab Zero</a>, a product development shop in San Francisco. I support fintech, management consulting, and eCommerce clients. Work under NDA; presented upon <a href="mailto:cehopkins@gmail.com">request</a>.</p>
-                    <p><span class="subject">Specialties —</span> Lean product strategy, UX design, service design, interaction design, user interviews, journey maps, wireframes, and rapid prototypes.</p>
-                    <p><span class="subject">Team —</span> I work alongside four fellow designers (<a href="https://www.linkedin.com/in/rdeanbaker" target='_blank'>Dean</a>, <a href="https://www.linkedin.com/in/tracey-thompson-b593775" target='_blank'>Tracey</a>, Stacy, and <a href="https://www.linkedin.com/in/jim-ochsenreiter-434409" target='_blank'>Jim</a>) as well as two product owners (<a href="https://www.linkedin.com/in/aaroncripps" target='_blank'>Aaron</a> and <a href="https://www.linkedin.com/in/cesaridrovo" target='_blank'>César</a>) and <a href="https://labzero.com/people" target='_blank'>15 developers</a>.</p>
-                    <p><span class="subject">Tools —</span> Sketch App, InVision, Adobe Xd, Trello, Zeplin.io, Pivotal Tracker, JIRA, Confluence, and HTML/CSS.</p>
-                    <p><span class="subject">Timeframe —</span> April 2016 to present.</p>
-                    <!-- <p><span class="subject">Work under NDA —</span> Available upon <a href="mailto:cehopkins@gmail.com">request</a>.</p> -->
-                </div>
-            </section>
-            <hr color="#D8D8D8" class="home-hr">
-            <section class="flex-container">
-                <img class="flex-image" src="img/taproot.jpg" alt="Grateful Gatherings group shot"></img>
-                <div class="flex-content">
-                    <h1>Pro bono design for the Taproot Foundation</h1>
-                    <p>I volunteer with <a href="https://www.taprootplus.org/" target='_blank'>Taproot</a> to give back to the community while honing my design skills. Currently, I am redesigning a website for Grateful Gatherings, a nonprofit in the Bay Area that provides furniture and household goods to families transitioning out of homelessness, poverty, or crisis.</p>
-                    <p><span class="subject">Timeframe —</span> September 2016 to present.</p>
-                    <p><span class="subject">Stay tuned —</span> Work in progress.</p>
-                </div>
-            </section>
-            <hr color="#D8D8D8" class="home-hr">
-            <section class="flex-container">
-                <img class="flex-image" src="img/meterhero.jpg" alt="MeterHero startup work"></img>
-                <div class="flex-content">
-                    <h1>Past design work at MeterHero</h1>
-                    <p>MeterHero was an early-stage greentech startup. I led design efforts end to end, designed several product features, overhauled the new user onboarding process, and redesigned the mobile-first homepage. Work under NDA; presented upon <a href="mailto:cehopkins@gmail.com">request</a>.</p>
-                    <!-- <a href="">Read the case study.</a> -->
-                    <p><span class="subject">Specialties —</span> UX design, wireframes, user research, service design, and mobile-first product design.</p>
-                    <p><span class="subject">Team —</span> As the solo designer, I worked alongside the founder, two developers (<a href="https://www.linkedin.com/in/rebeccaholzschuh" target='_blank'>Rebecca</a> and <a href="https://www.linkedin.com/in/dhallinan" target='_blank'>David</a>), and three community support teammates.</p>
-                    <p><span class="subject">Tools —</span> Sketch App, InVision, Pivotal Tracker, and HTML/CSS.</p>
-                    <p><span class="subject">Timeframe —</span> June to December 2016.</p>
-                </div>
-            </section>
-            <hr color="#D8D8D8" class="home-hr">
-            <section class="flex-container">
-                <img class="flex-image" src="img/docusign.jpg" alt="DocuSign Hackathon"></img>
-                <div class="flex-content">
-                    <h1>Other fun side projects</h1>
-                    <p><span class="subject">HandelsAlcina.com —</span> I designed and coded a website in August 2016 to help my brother Chase, an opera singer based in Europe, promote his production of George Frideric Handel's Alcina. I utilized parallax scrolling and Google's Material Design. <a href="http://www.handelsalcina.com" target='_blank'>View the website.</a></p>
-                    <p><span class="subject">DocuSign 2016 Momentum hackathon —</span> I worked with two developers, <a href="https://www.linkedin.com/in/nicholasreed" target='_blank'>Nick</a> and <a href="https://www.linkedin.com/in/jessie-black-b479b396" target='_blank'>Jessie</a>, in 2016 to build an app to help the Team Rubicon organization manage liability and consent waivers for their disaster relief efforts, while utilizing DocuSign’s API. Our team won "Best Mobile App Solution." <a href="https://medium.com/@claytonhopkins/disaster-proof-design-for-team-rubicon-21024dd82733#.nll802kg9" target='_blank'>Read more.</a></p>
-                    <!-- <p><i class="fa fa-trophy" aria-hidden="true"></i>Hello</p> -->
-                    <p><span class="subject">Dev Bootcamp 2016 civic hackathon —</span> I worked with three developers, <a href="https://www.linkedin.com/in/ajgrande924" target='_blank'>AJ</a>, <a href="https://www.linkedin.com/in/khamlaphimmachack" target='_blank'>Khamla</a>, and <a href="https://www.linkedin.com/in/simon-situ-b4781224" target='_blank'>Simon</a>, to build a web app to make farmers markets more accessible, using the US Department of Agriculture's Farmers Market API. Our team won “Best Use of a Public API.” <a href="https://medium.com/@claytonhopkins/design-thinking-to-make-farmers-markets-more-accessible-1477872059fd#.se0i417no" target='_blank'>Read more.</a></p>
-                    <p><span class="subject">ClaytonHopkins.github.io portfolio site —</span> I designed and coded this portfolio website in November 2016 with vanilla HTML5 and CSS. I used lean design to guide my process, which involved launching an MVP site to get feedback and validate ideas. <a href="https://medium.com/@claytonhopkins/portfolio-updates-2016-edition-dd5f345e510b#.s9e9anxs8" target='_blank'>Read about my design considerations.</a></p>
-                    <p><span class="subject">“Put a bird on it” website —</span> As a web designer, I think it is critical to understand how websites work “under the hood.” I coded my first website in 2015 using vanilla HTML5, CSS, and JavaScript. <a href="https://medium.com/@claytonhopkins/put-a-bird-on-it-e266acce1da2#.jwfb7ktej" target='_blank'>Here's what I learned.</a></p>
-                </div>
-            </section>
-            <hr color="#D8D8D8" class="home-hr">
-            <section class="flex-container">
-                <img class="flex-image" src="img/freetime.jpg" alt="Garnet Lake in the Ansel Adams Wilderness"></img>
-                <div class="flex-content">
-                    <h1>Outside of work</h1>
-                    <p>Bike, backpack, and repeat. On weekends, you can find me enjoying Northern California’s beautiful trails and roads. Outside of California, I love exploring National Parks and UNESCO World Heritage sites.</p>
-                    <p>Some of my favorite apps are designed for the outdoors, such as <a href="https://www.strava.com/athletes/clayton_hopkins" target='_blank'>Strava</a> and <a href="https://www.theoutbound.com/" target='_blank'>The Outbound Collective</a>. Both apps help me plan fun trips, explore new places, and stay active with friends.</p>
-                    <p>Shown here: In 2016, I went backpacking on the John Muir Trail to see <a href="https://www.theoutbound.com/yosemite/backpacking/backpack-to-garnet-lake" target='_blank'>Garnet Lake</a> in the Ansel Adams Wilderness.</p>
-                </div>
-            </section>
+		<section class="finale hide">
+			<h1 class="finale-h1">Success!</h1>
+			<p class="finale-p">Your gift shop is ready to open for business.</p>
+			<a class="reset-button">Reset</a>
+		</section>
 
-        </main>
+		<section class="footer">
+			<a target="_blank" class="footer-button" href="https://medium.com/@claytonhopkins/put-a-bird-on-it-e266acce1da2#.jumu2hi3y">About this Project</a>
+			<p class="footer-p">Made with <span class="footer-blue">&hearts; </span>by Clayton <span class="footer-blue">|</span> <a target="_blank" class="portfolio-link" href="http://cehopkins.com">cehopkins.com</a></p>
+		</section>
 
-        <footer>
-            <section class="home-contact">
-                <hr color="#D8D8D8" class="home-hr">
-                <a href="mailto:cehopkins@gmail.com">Email</a>
-                <a href="https://medium.com/@claytonhopkins" target='_blank'>Blog</a>
-                <a href="https://twitter.com/claytonhopkins" target='_blank'>Twitter</a>
-                <a href="https://www.linkedin.com/in/claytonhopkins" target='_blank'>LinkedIn</a>
-            </section>
-
-            <section class="home-footer">
-                <p>Made by Clayton Hopkins &copy; 2016</p>
-            </section>
-      </footer>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/main.js"></script>
-    </body>
+		<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+		<script src="js/index.js"></script>
+	</body>
 </html>
